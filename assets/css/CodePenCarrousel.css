@@ -1,0 +1,181 @@
+.sliderCarrousel {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 300px;
+  height: 270px;
+/*   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius:10px;
+}
+
+#items {
+  width: 10000px;
+  position: relative;
+  top: 0;
+  left: -400px;
+}
+
+#items.shifting {
+  transition: left .2s ease-out;
+}
+
+.slide {
+  width: 300px;
+  height: 450px;
+  cursor: pointer;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s;
+  position: relative;
+}
+
+.slider.loaded .slide:nth-child(2),
+.slider.loaded .slide:nth-child(7) {
+  background: #FFCF47;
+    border-radius:10px;
+}
+.slider.loaded .slide:nth-child(1),
+.slider.loaded .slide:nth-child(6) {
+  background: #7ADCEF;
+    border-radius:10px;
+}
+.slider.loaded .slide:nth-child(3) {
+  background: #dff8ec;
+    border-radius:10px;
+}
+.slider.loaded .slide:nth-child(4) {
+  background: #a78df5;
+    border-radius:10px;
+}
+.slider.loaded .slide:nth-child(5) {
+  background: #ff8686;
+    border-radius:10px;
+}
+
+.contentCarrousel{
+width:400px;
+height:560px;
+border-radius:10px;
+box-shadow:0 6px 6px rgba(0, 0, 0, 0.0), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+position:relative;
+margin-top:0px
+}
+
+.up{
+width:400px;
+height:400px;
+border-radius:10px 10px 0 0;
+background: rgba(28,216,210,1);
+background: rgba(28,216,210,1);
+background: -moz-linear-gradient(top, rgba(28,216,210,1) 0%, rgba(147,237,199,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(28,216,210,1)), color-stop(100%, rgba(147,237,199,1)));
+background: -webkit-linear-gradient(top, rgba(28,216,210,1) 0%, rgba(147,237,199,1) 100%);
+background: -o-linear-gradient(top, rgba(28,216,210,1) 0%, rgba(147,237,199,1) 100%);
+background: -ms-linear-gradient(top, rgba(28,216,210,1) 0%, rgba(147,237,199,1) 100%);
+background: linear-gradient(to bottom, rgba(28,216,210,1) 0%, rgba(147,237,199,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cd8d2', endColorstr='#93edc7', GradientType=0 );
+}
+
+.producto{
+width:300px;
+height:400px;
+background-size: 320px 540px;
+background-position:center; 
+background-repeat:no-repeat;
+margin-left:calc(30% - 150px);
+position:relative;
+top:40px;
+border-radius:10px;
+box-shadow: 0 0px 5px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.1);}
+
+/*
+.pro_1{
+background-image: src="../assets/img/FotoTomas1.jpg";
+  }
+
+.pro_2{
+background-image: src="../assets/img/FotoTomas2.jpg";
+  }
+
+.pro_3{
+background-image: src="../assets/img/FotoTomas3.jpg";
+  }
+*/
+
+.price p{color:#FFFFFF;
+  width: 27px;
+  float:right;
+  font-size:2em;
+  font-weight: bold;
+  margin-top:25px
+}
+
+.button{
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  font-weight: bold;
+  padding: 14px 0px;
+  color:#FFFFFF;
+  border-radius: 5px;
+  position: relative;
+  background-color:#1cd8d2;
+  box-shadow: 0 0px 6px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.1);
+  margin-left: calc(150px - 50px);
+  top:70px
+
+}
+
+.button:hover{
+background-color:#93edc7;
+color:#FFFFFF
+}
+
+.control {
+  position: absolute;
+  top: 100%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: -20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -20px;
+  top: 225px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -20px;
+  top: 225px;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(0.8);
+}
